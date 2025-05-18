@@ -25,6 +25,27 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     }
   };
 
+  const footerLinks = [
+    {
+      title: 'Về chúng tôi',
+      links: [
+        { name: 'Giới thiệu', path: '/about' },
+        { name: 'Liên hệ', path: '/contact' },
+        { name: 'Changelog', path: '/changelog' },
+        { name: 'FAQ', path: '/faq' },
+      ]
+    },
+    {
+      title: 'Chính sách',
+      links: [
+        { name: 'Điều khoản sử dụng', path: '/terms' },
+        { name: 'Chính sách bảo mật', path: '/privacy' },
+        { name: 'Chính sách cookie', path: '/cookie-policy' },
+        { name: 'Tuyên bố miễn trừ', path: '/disclaimer' },
+      ]
+    }
+  ];
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
@@ -168,6 +189,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <footer className="bg-neutral-800 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Brand and Description */}
             <div className="col-span-1 md:col-span-2">
               <Link to="/" className="text-2xl font-bold flex items-center mb-4">
                 <span className="bg-white text-primary rounded-lg py-1 px-2 mr-2">A</span>
@@ -195,31 +217,28 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 </a>
               </div>
             </div>
-            <div>
-              <h3 className="text-lg font-medium mb-4">Liên kết nhanh</h3>
-              <ul className="space-y-2">
-                <li><Link to="/" className="text-neutral-300 hover:text-white transition-colors">Trang chủ</Link></li>
-                <li><Link to="/latest" className="text-neutral-300 hover:text-white transition-colors">Bài viết mới</Link></li>
-                <li><a href="#" className="text-neutral-300 hover:text-white transition-colors">Về chúng tôi</a></li>
-                <li><a href="#" className="text-neutral-300 hover:text-white transition-colors">Liên hệ</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-medium mb-4">Danh mục</h3>
-              <ul className="space-y-2">
-                {categories.map(category => (
-                  <li key={category.id}>
-                    <Link 
-                      to={`/category/${category.slug}`} 
-                      className="text-neutral-300 hover:text-white transition-colors"
-                    >
-                      {category.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+
+            {/* Footer Links */}
+            {footerLinks.map((section, index) => (
+              <div key={index}>
+                <h3 className="text-lg font-medium mb-4">{section.title}</h3>
+                <ul className="space-y-2">
+                  {section.links.map((link, linkIndex) => (
+                    <li key={linkIndex}>
+                      <Link
+                        to={link.path}
+                        className="text-neutral-300 hover:text-white transition-colors"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
+
+          {/* Copyright */}
           <div className="mt-12 pt-8 border-t border-neutral-700 text-center text-neutral-400 text-sm">
             <p>&copy; {new Date().getFullYear()} Atlassian Blog. Tất cả các quyền được bảo lưu.</p>
           </div>
