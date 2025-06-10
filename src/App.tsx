@@ -96,6 +96,7 @@ const translations = {
     factoryTourDesc: 'Tham quan ảo nhà máy hiện đại của chúng tôi với công nghệ CNC tiên tiến và đội ngũ thợ lành nghề.',
     
     // Clients & Partners
+    Partners:"Khách Hàng & Đối Tác",
     partnersTitle: 'Được Tin Tưởng Bởi Các Đối Tác',
     partnersDesc: 'Chúng tôi tự hào hợp tác với các doanh nghiệp uy tín trong và ngoài nước.',
     
@@ -199,6 +200,7 @@ const translations = {
     factoryTourDesc: 'Take a virtual tour of our modern factory with advanced CNC technology and skilled craftsmen.',
     
     // Clients & Partners
+    Partners: 'Clients & Partners',
     partnersTitle: 'Trusted by Partners',
     partnersDesc: 'We are proud to partner with reputable businesses domestically and internationally.',
     
@@ -293,8 +295,8 @@ const factoryImages = [
 
 // Language options with flag emojis
 const languageOptions = [
-  { code: 'vie', label: 'Tiếng Việt', flag: '🇻🇳' },
-  { code: 'eng', label: 'English', flag: '🇺🇸' }
+  { code: 'vie', label: 'Tiếng Việt',  },
+  { code: 'eng', label: 'English',  }
 ];
 
 function App() {
@@ -421,7 +423,7 @@ function App() {
             <div className="relative">
               <button 
                 onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
-                className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 rounded-lg px-4 py-2 transition-all duration-200 min-w-[120px] h-10"
+                className="flex items-center space-x-2 bg-gray-100 hover:bg-gray-50 rounded-lg px-4 py-2 transition-all duration-200 min-w-[50px] h-10"
               >
                 <span className="text-lg">{currentLanguageOption?.flag}</span>
                 <span className="text-sm font-medium text-gray-700">{currentLanguageOption?.code.toUpperCase()}</span>
@@ -430,7 +432,7 @@ function App() {
 
               {/* Dropdown Menu */}
               {isLanguageDropdownOpen && (
-                <div className="absolute top-full right-0 mt-2 bg-white rounded-lg shadow-lg border border-gray-200 py-2 min-w-[140px] z-50">
+                <div className="absolute top-full right-0 mt-2 bg-white rounded-lg shadow-lg border border-gray-50 py-2 min-w-[50px] z-50">
                   {languageOptions.map((option) => (
                     <button
                       key={option.code}
@@ -438,8 +440,7 @@ function App() {
                       className={`w-full flex items-center space-x-3 px-4 py-2 text-sm transition-colors hover:bg-gray-50 ${
                         currentLanguage === option.code ? 'bg-teal-50 text-teal-600' : 'text-gray-700'
                       }`}
-                    >
-                      <span className="text-lg">{option.flag}</span>
+                    > 
                       <span className="font-medium">{option.label}</span>
                     </button>
                   ))}
@@ -490,11 +491,7 @@ function App() {
                 src="https://hungphuthinh.vn/datafiles/1743143064_gioi-thieu-ve-hung-phu-thinh.jpg"
                 alt="Loc Phat Furniture Core Team"
                 className="w-full h-full object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-teal-900/90 to-teal-700/80"></div>
-            </div>
-            <div className="relative z-10 w-full max-w-4xl mx-auto px-2 sm:px-6 text-white text-center flex flex-col items-center justify-center">
-              <h1 className="text-3xl sm:text-4xl font-bold mb-3 drop-shadow-lg break-words">LỘC PHÁT FURNITURE</h1>
+              /> 
             </div>
           </div>
           {/* About Us Section */}
@@ -682,7 +679,7 @@ function App() {
           <div className="bg-gray-50 flex flex-col px-2 py-8">
             <div className={`max-w-7xl mx-auto px-2 sm:px-6 transition-all duration-500 ${isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}> 
               <div className="text-center mb-10 md:mb-16">
-                <span className="text-orange-500 font-semibold text-xs sm:text-sm uppercase tracking-wide mb-2 block">Partners</span>
+                <span className="text-orange-500 font-semibold text-xs sm:text-sm uppercase tracking-wide mb-2 block">{t.Partners}</span>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 break-words">{t.partnersTitle}</h2>
                 <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
                   {t.partnersDesc}
