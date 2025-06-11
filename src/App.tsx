@@ -488,7 +488,7 @@ function App() {
           <div className="relative overflow-hidden flex items-center justify-center min-h-[60vh] bg-gray-900 px-2 py-10">
             <div className="absolute inset-0">
               <img
-                src="https://hungphuthinh.vn/datafiles/1743143064_gioi-thieu-ve-hung-phu-thinh.jpg"
+                src="https://arito-assets-cdn.pages.dev/1-banner/IMG_4973.jpg"
                 alt="Loc Phat Furniture Core Team"
                 className="w-full h-full object-cover object-center"
               /> 
@@ -499,7 +499,7 @@ function App() {
             <div className={`max-w-7xl mx-auto px-2 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center transition-all duration-500 ${isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
               <div className="relative">
                 <img 
-                  src="https://images.pexels.com/photos/5691630/pexels-photo-5691630.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1"
+                  src="https://arito-assets-cdn.pages.dev/2-gioi-thieu/IMG_4975.JPG"
                   alt="Wood processing facility"
                   className="w-full h-96 object-cover rounded-2xl shadow-2xl"
                 />
@@ -866,8 +866,7 @@ function App() {
             </div>
           </div>
         </div>
-      ) : (
-        // ...ReactFullpage như cũ...
+      ) : ( 
         <ReactFullpage
           licenseKey={'gplv3-license'}
           scrollingSpeed={1000}
@@ -877,7 +876,7 @@ function App() {
           sectionsColor={['#ffffff', '#f8fafc', '#ffffff', '#f8fafc', '#ffffff', '#f8fafc', '#ffffff', '#f8fafc']}
           scrollOverflow={false}
           autoScrolling={true}
-          fitToSection={true}
+          fitToSection={true} 
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
@@ -886,7 +885,7 @@ function App() {
                   {/* Background group photo */}
                   <div className="absolute inset-0">
                     <img
-                      src="https://hungphuthinh.vn/datafiles/1743143064_gioi-thieu-ve-hung-phu-thinh.jpg"
+                      src="https://arito-assets-cdn.pages.dev/1-banner/IMG_4973.jpg"
                       alt="Loc Phat Furniture Core Team"
                       className="w-full h-full object-cover object-center"
                     /> 
@@ -898,7 +897,7 @@ function App() {
                   <div className={`max-w-7xl mx-auto px-2 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center transition-all duration-500 ${isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
                     <div className="relative">
                       <img 
-                        src="https://images.pexels.com/photos/5691630/pexels-photo-5691630.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1"
+                        src="https://arito-assets-cdn.pages.dev/2-gioi-thieu/IMG_4975.JPG"
                         alt="Wood processing facility"
                         className="w-full h-96 object-cover rounded-2xl shadow-2xl"
                       />
