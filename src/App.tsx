@@ -210,7 +210,7 @@ const translations: Record<string, any> = {
     getInTouch: 'Get In Touch',
     contactDesc: 'Ready to discuss your project? Contact us today for a consultation.',
     ourLocation: 'Our Location',
-    locationAddress: '123 Industrial Avenue\nManufacturing District\nCity, State 12345',
+    locationAddress: 'Land plot No. 789, Map sheet No. 38, Khanh Van Quarter, Khanh Binh Ward, Tan Uyen City, Binh Duong Province, Vietnam',
     name: 'Name',
     email: 'Email',
     phone: 'Phone',
