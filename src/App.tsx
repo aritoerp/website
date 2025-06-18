@@ -427,8 +427,8 @@ function App() {
           <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between h-12">
               <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-gradient-to-br from-teal-600 to-teal-700 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">L</span>
+                <div className="w-16 h-16  rounded-lg flex items-center justify-center">
+                  <img src="https://arito-assets-cdn.pages.dev/logo.webp"  alt="Lộc Phát Furniture Logo" />
                 </div>
                 <div>
                   <h1 className="text-xl font-bold text-gray-900 leading-tight">Lộc Phát Furniture</h1>
@@ -794,8 +794,8 @@ function App() {
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                       <div className="lg:col-span-1">
                         <div className="flex items-center space-x-2 mb-4">
-                          <div className="w-10 h-10 bg-gradient-to-br from-teal-600 to-teal-700 flex items-center justify-center">
-                            <span className="text-white font-bold text-lg">L</span>
+                          <div className="w-10 h-10 bg-gradient-to-br from-teal-600 to-teal-700 flex items-center justify-center rounded-md">
+                            <img src="https://arito-assets-cdn.pages.dev/logo.webp" alt="Lộc Phát Furniture Logo" className="w-8 h-8 object-contain" />
                           </div>
                           <div>
                             <h3 className="text-lg font-bold text-gray-900">Lộc Phát Furniture</h3>
@@ -1161,7 +1161,7 @@ function App() {
                             <div className="lg:col-span-1">
                               <div className="flex items-center space-x-2 mb-4">
                                 <div className="w-10 h-10 bg-gradient-to-br from-teal-600 to-teal-700 flex items-center justify-center rounded-md">
-                                  <span className="text-white font-bold text-lg">L</span>
+                                  <img src="https://arito-assets-cdn.pages.dev/logo.webp" alt="Lộc Phát Furniture Logo" className="w-8 h-8 object-contain" />
                                 </div>
                                 <div>
                                   <h3 className="text-lg font-bold text-gray-900">Lộc Phát Furniture</h3>
