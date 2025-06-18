@@ -106,7 +106,7 @@ const translations: Record<string, any> = {
     getInTouch: 'Liên Hệ Với Chúng Tôi',
     contactDesc: 'Sẵn sàng thảo luận về dự án của bạn? Liên hệ với chúng tôi ngay hôm nay để được tư vấn.',
     ourLocation: 'Vị Trí Của Chúng Tôi',
-    locationAddress: '123 Đại Lộ Công Nghiệp\nKhu Sản Xuất\nThành Phố, Tỉnh 12345',
+    locationAddress: 'Thửa đất số 789, Tờ bản đồ số 38, Khu phố Khánh Vân, Phường Khánh Bình, Thành phố Tân Uyên, Tỉnh Bình Dương, Việt Nam',
     name: 'Họ Tên',
     email: 'Email',
     phone: 'Điện Thoại',
